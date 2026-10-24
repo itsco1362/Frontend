@@ -1,0 +1,205 @@
+@import
+url('https://fonts.googleapis.com/css2?family=inter:wght@400;500;600:700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    font-family:'inter',sans-serif;
+    min-height:100vh;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+}
+/*___card___*/
+.card{
+    background:rgba(255, 255, 255, 0.05);
+    backdrop-filter:blur(16px);
+    border: 1px solid rgba (255,255,255,0.1);
+    border-radius: 20px;
+    padding: 48px 40px;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 025px 50px rgba(0,0,0,0.4);
+}
+/*___Logo / Brand___*/
+.brand {
+    text-align:center;
+    margin-bottom:32px;
+}
+.brand-icon{
+    width:52px;
+    height:52px;
+    background:linear-gradient(135deg,#a78bfa,#6366f1);
+    border-radius:14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.brand h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.3px;
+}
+
+.brand p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 6px;
+}
+
+/* ─── Form ─── */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 13px 16px;
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s, background 0.2s;
+    outline: none;
+}
+
+.form-group input::placeholder {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.form-group input:focus {
+    border-color: #a78bfa;
+    background: rgba(167, 139, 250, 0.08);
+}
+
+/* ─── Button ─── */
+.btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #a78bfa, #6366f1);
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: opacity 0.2s, transform 0.1s;
+    letter-spacing: 0.2px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* ─── Divider ─── */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 22px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.divider p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+/* ─── Footer link ─── */
+.footer-link {
+    text-align: center;
+    margin-top: 24px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.footer-link a {
+    color: #a78bfa;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-link a:hover {
+    text-decoration: underline;
+}
+
+/* ─── Checkbox ─── */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #a78bfa;
+    cursor: pointer;
+}
+
+.checkbox-group label {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+}
+
+.checkbox-group label a {
+    color: #a78bfa;
+    text-decoration: none;
+}
+
+/* ─── Forgot password ─── */
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.form-header label {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.form-header a {
+    font-size: 12px;
+    color: #a78bfa;
+    text-decoration: none;
+}
+
+.form-header a:hover {
+    text-decoration: underline;
+}
